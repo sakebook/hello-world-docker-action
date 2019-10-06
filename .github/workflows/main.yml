@@ -5,12 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@master
 #      - uses: ./.github/actions/hello-world-action
-      - uses: ./ # Uses an action in the root directory
       - name: Hello world action step
         id: hello
-        uses: actions/hello-world-docker-action@master
+        uses: ./ # Uses an action in the root directory
+#        uses: actions/hello-world-docker-action@master
         with:
           who-to-greet: 'sakebook'
       # Use the output from the `hello` step
