@@ -14,7 +14,6 @@ jobs:
       - name: LS after
         run: ls -la
       - name: Hello world action step
-        uses: ./. # Uses an action in the root directory
         with:
           who-to-greet: 'sakebook'
       # Use the output from the `hello` step
