@@ -5,12 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - name: Path
-        uses: ./
       - name: Checkout
       - uses: actions/checkout@v1
       - name: Hello world action step
         uses: ./
+        working-directory: ./
         with:
           who-to-greet: 'sakebook'
       # Use the output from the `hello` step
