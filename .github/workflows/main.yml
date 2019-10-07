@@ -7,6 +7,10 @@ jobs:
     steps:
 #      - name: Checkout
 #        uses: actions/checkout@master
+      - name: PWD
+        run: pwd
+      - name: LS
+        run: ls -la
       - name: Hello world action step
         uses: ./ # Uses an action in the root directory
         with:
