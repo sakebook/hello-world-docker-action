@@ -8,10 +8,9 @@ jobs:
       - name: Checkout
       - uses: actions/checkout@v1
       - name: Hello world action step
-        uses: ./
-        working-directory: ./
         with:
           who-to-greet: 'sakebook'
+        uses: ./
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
