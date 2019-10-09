@@ -11,6 +11,7 @@ jobs:
         uses: ./
         with:
           who-to-greet: 'sakebook'
+          sample: 'this is sample'
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
