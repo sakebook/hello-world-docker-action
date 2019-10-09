@@ -6,10 +6,6 @@ inputs:
     description: 'Who to greet'
     required: true
     default: 'World'
-  this-is-sample:  # id of input
-    description: 'sample'
-    required: true
-    default: 'World'
 outputs:
   time: # id of output
     description: 'The time we greeted you'
