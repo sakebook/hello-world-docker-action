@@ -6,7 +6,7 @@ inputs:
     description: 'Who to greet'
     required: true
     default: 'World'
-  sample:  # id of input
+  this-is-sample:  # id of input
     description: 'sample'
     required: true
     default: 'World'
